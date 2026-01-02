@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expense Tracker Pro - Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button class="mode-btn" onclick="toggleMode()">🌙 Dark</button>
 
-  <h1>Login🔏</h1>
+  <!-- LOGIN SCREEN -->
+  <div class="login-container" id="loginScreen">
+    <div class="login-box">
+      <div class="login-logo">💰</div>
+      <h1 class="login-h1">Expense Tracker Pro</h1>
 
-  <main class="centered">
-    <section class="box">
-      <h2>Login for next page</h2>
+      <div class="error-msg" id="errorMsg">Invalid credentials!</div>
 
-      <label>Email</label>
-      <input id="email" type="email" placeholder="you@example.com">
+      <div class="login-input-group">
+        <label>Username</label>
+        <input type="text" class="login-input" id="username" placeholder="pranita" value="pranita">
+      </div>
 
-      <label>Username</label>
-      <input id="username" type="text" placeholder="username">
+      <div class="login-input-group">
+        <label>Password</label>
+        <input type="password" class="login-input" id="password" placeholder="pranita" value="pranita">
+      </div>
 
-      <label>Password</label>
-      <input id="password" type="password" placeholder="password">
+      <button class="login-btn" onclick="login()">🚀 Login</button>
 
-      <label>Phone</label>
-      <input id="phone" type="tel" placeholder="98765 43210">
-
-      <button onclick="login()">Login</button>
-    </section>
-  </main>
+      <div class="credentials">
+        <strong>Username:</strong> pranita<br>
+        <strong>Password:</strong> pranita
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

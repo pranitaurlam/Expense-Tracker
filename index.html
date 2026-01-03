@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expense Tracker Pro - Pranita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="mainApp">
+    <button class="toggle-btn" onclick="toggleTheme()">🌙 Dark</button>
+
+    <div class="header">
+      <h1>💰 Welcome Pranita!</h1>
+      <p>Track your finances with beautiful charts</p>
+    </div>
+
+    <div class="dashboard">
+      <div class="card">
+        <div class="amount balance" id="balance">₹0</div>
+        <div>Balance</div>
+      </div>
+      <div class="card">
+        <div class="amount income" id="income">₹0</div>
+        <div>Income</div>
+      </div>
+      <div class="card">
+        <div class="amount expense" id="expenses">₹0</div>
+        <div>Expenses</div>
+      </div>
+    </div>
+
+    <div class="input-section">
+      <h3 style="margin-bottom: 20px; color: #333;">➕ Add Transaction</h3>
+      <div class="input-group">
+        <input type="text" id="desc" placeholder="Description (Travel to Delhi)">
+        <input type="number" id="amount" placeholder="Amount (2500)">
+        <select id="type">
+          <option value="expense">📉 Expense</option>
+          <option value="income">📈 Income</option>
+        </select>
+        <select id="category">
+          <option value="food">🍔 Food</option>
+          <option value="transport">🚗 Transport</option>
+          <option value="travel">✈️ Travel</option>
+          <option value="shopping">🛒 Shopping</option>
+          <option value="entertainment">🎮 Entertainment</option>
+          <option value="salary">💼 Salary</option>
+          <option value="other">📋 Other</option>
+        </select>
+      </div>
+      <button class="add-btn" onclick="addTransaction()">➕ Add Transaction</button>
+    </div>
+
+    <div class="category-breakdown">
+      <h3>📋 Category Breakdown</h3>
+      <div id="categoryList">Add expenses to see breakdown</div>
+    </div>
+
+    <div class="transactions">
+      <h3>📋 Recent Transactions</h3>
+      <div id="transactionList">No transactions yet</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

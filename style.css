@@ -49,3 +49,24 @@ body {
 .dark .login-h1 {
   color: white;
 }
+
+.login-input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.login-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 16px;
+  background: white;
+}

@@ -34,3 +34,18 @@ body {
   max-width: 400px;
   text-align: center;
 }
+
+.login-logo {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.login-h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.dark .login-h1 {
+  color: white;
+}

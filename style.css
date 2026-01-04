@@ -87,3 +87,29 @@ body {
 .login-btn:hover {
   transform: translateY(-2px);
 }
+
+.credentials {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.error-msg {
+  background: rgba(239, 68, 68, 0.2);
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ef4444;
+  display: none;
+}
+
+/* Main App Styles */
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding-top: 80px;
+}
